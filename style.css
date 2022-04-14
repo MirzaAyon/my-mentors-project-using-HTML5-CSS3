@@ -349,3 +349,7 @@ body {
 .photo:hover::before {
     opacity: 1;
 }
+
+.banner img {
+    border: 4px solid #22bedd;
+}

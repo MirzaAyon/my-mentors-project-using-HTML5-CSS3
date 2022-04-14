@@ -217,6 +217,29 @@ body {
     }
 }
 
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    color: #22bedd;
+    font-size: 40px;
+    margin: 50px 0;
+    border-left: 3px solid #22bedd;
+    border-right: 3px solid #22bedd;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 0.8;
+}
+
+.gallary {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* flex wrap dewar fole responsive holo  */
+}
+
 /* photo frame styles */
 .photo {
     height: 280px;
@@ -304,8 +327,25 @@ body {
     bottom: 0;
     left: 0;
     transform: translateY(400px);
+    transition: .3s ease-out;
 }
 
 .photo:hover .photo-content {
     transform: translateY(200px);
+}
+
+.photo::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: .3s linear;
+}
+
+.photo:hover::before {
+    opacity: 1;
 }

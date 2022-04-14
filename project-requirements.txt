@@ -1,0 +1,7 @@
+*******Project Requirements*****
+1.Make a banner where the left side will be a heading and a paragraph and a button and right side will be an image.
+2.Heading will be typing effect with css
+3.Make a photo frame with name and job title
+4.When hovering over the frame, create four borders around the frame and add simple animation with those borders.
+5.Name and job title will not show by default. when hovering over the frame, it will come from the bottom of the frame and an overly color will show.
+6.Use #22bedd as primary color
